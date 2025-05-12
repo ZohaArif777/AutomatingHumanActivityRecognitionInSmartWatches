@@ -1,0 +1,111 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#13222E"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Automating Human  Activity \nrecognition in smart watches"
+        android:textColor="#378FD5"
+
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:id="@+id/btnSelectFile"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:gravity="center"
+        android:textColor="@color/white"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="74dp"
+        android:background="@drawable/rounded_button"
+        android:padding="10dp"
+        android:text="Select a file">
+
+    </Button>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:visibility="gone" />
+
+    <Button
+        android:id="@+id/btnPredict"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSelectFile"
+       android:layout_marginTop="20dp"
+        android:background="@drawable/rounded_button"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:textColor="@android:color/white"
+        android:text="Predict" />
+
+    <RelativeLayout
+        android:id="@+id/bottomButtonsLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#13222E"
+        android:gravity="center"
+        android:paddingBottom="16dp">
+
+        <!-- Horizontal LinearLayout for the first two switches -->
+        <LinearLayout
+            android:id="@+id/btlayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Switch
+                android:id="@+id/btnVoiceCommand"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:text="Voice Command"
+                android:layout_marginLeft="16dp" />
+
+            <Switch
+                android:id="@+id/btnToggleHighContrast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:text="Toggle High Contrast"
+                android:layout_marginLeft="16dp"
+                android:layout_marginRight="16dp" />
+
+        </LinearLayout>
+
+        <Switch
+            android:id="@+id/switchLargerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="Larger Text"
+            android:layout_below="@id/btlayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="8dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

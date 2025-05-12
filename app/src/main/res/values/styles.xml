@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Default colors -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">#13222E</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">#13222E</item>
+    </style>
+
+    <!-- High Contrast theme -->
+    <style name="AppTheme.HighContrast" parent="AppTheme">
+        <!-- High contrast colors -->
+        <item name="colorPrimary">#4CAF50</item> <!-- Yellow -->
+        <item name="colorPrimaryDark">#66F16C</item> <!-- Amber -->
+        <item name="colorAccent">#FF5722</item> <!-- Deep Orange -->
+        <item name="android:textColor">@color/white</item>
+        <item name="android:background">#5C8033</item>
+    </style>
+
+    <!-- Larger Text theme -->
+    <style name="AppTheme.LargerText" parent="AppTheme">
+        <item name="android:textSize">24sp</item> <!-- Larger text size -->
+    </style>
+</resources>
